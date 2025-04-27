@@ -104,8 +104,8 @@ def number_guessing_game():
         
         # In increasing difficulty mode, increase difficulty by 1
         if mode == 2:
-            current_difficulty += 1
-            print(f"\nDifficulty increased to {current_difficulty} for the next round!")
+            current_difficulty -= 1
+            print(f"\nDifficulty increased to a limit of {current_difficulty} guesses for breaking even in the next round!")
         
         # Ask about cashing out/paying up instead of asking to play again
         if player_score > 0:
